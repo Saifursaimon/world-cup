@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.top-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 50px 0;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 90%;
+    height: 90%;
+}
+.banner .headings{
+    color: white;
+}
+.banner .headings h1{
+    font-size: 60px;
+}
+.banner .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: red;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.link-button a{
+    text-decoration: none;
+    color: white;
+}
+.matches{
+    display: flex;
+    gap: 24px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+}
+.options{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 252px;
+    height: 64px;
+}
+.selected{
+    background-color: red;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.blog{
+    width: 312px;
+    height: 390px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b2b2b2;
+}
+.blog-texts{
+    padding: 0 10px;
+}
+.transfer{
+    width: 100px;
+    padding: 10px 0;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+.blog-details{
+    display: flex;
+    gap: 30px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #161616;
+    text-align: center;
+}
+.footer-texts{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    color: #B9B9B9;
+    padding-top: 50px ;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* Small Devices */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .headings{
+        display: grid;
+        justify-items: center;
+    }
+    .matches{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        background: none;
+        margin-bottom: 100px;
+    }
+    .options{
+        height: 90px;
+        width: 230px;
+        border: 2px solid gray;
+        
+    }
+    .blogs{
+    grid-template-columns: repeat(1,1fr);
+   }
+   .contact{
+    flex-direction: column;
+   }
+
+}
+
+/* Medium Devices */
+@media screen and (min-width:769px) and (max-width:992px) {
+    .matches{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: auto;
+        background: none;
+        margin-bottom: 100px;
+    }
+    .options{
+        height: 90px;
+        width: 230px;
+        border: 2px solid gray;
+        
+    }
+    .blogs{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .contact{
+    flex-wrap: wrap;
+   }
+
+}
+/* large devices */
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .matches{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
